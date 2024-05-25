@@ -5,16 +5,10 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   build: {
-    outDir: 'build', // Set the build output directory to 'build'
+    outDir: 'build', // Ensure the output directory is set to 'build'
     rollupOptions: {
-      // To treat 'three' as external (not included in the final bundle)
-      external: ['three'],
-      output: {
-        // Define globals for externalized imports
-        globals: {
-          three: 'THREE',
-        },
-      },
+      // Removing the external configuration to include 'three' in the bundle
+      // If specific control over how 'three' is bundled is needed, adjust here
     },
   },
 });
