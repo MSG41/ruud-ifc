@@ -1,0 +1,52 @@
+.ifc-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw; /* Add this line */
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.browse-button {
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 10;
+}
+
+.browse-button:hover {
+  background-color: #0056b3;
+}
+
+.viewer-container {
+  width: 100vw; /* Add this line */
+  height: calc(
+    100vh - 60px
+  ); /* Adjust height to be full screen minus button height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: white;
+}
+
+@media (max-width: 768px) {
+  .browse-button {
+    width: 100vw; /* Add this line */
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .viewer-container {
+    width: 100vw; /* Add this line */
+    height: calc(100vh - 70px);
+  }
+}
