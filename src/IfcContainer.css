@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  width: 100vw; /* Add this line */
+  width: 100vw; 
   margin: 0;
   background-color: #f0f0f0;
 }
@@ -27,7 +27,7 @@
 }
 
 .viewer-container {
-  width: 100vw; /* Add this line */
+  width: 100vw; 
   height: calc(
     100vh - 60px
   ); /* Adjust height to be full screen minus button height */
@@ -40,13 +40,13 @@
 
 @media (max-width: 768px) {
   .browse-button {
-    width: 100vw; /* Add this line */
+    width: 100vw;
     font-size: 14px;
     padding: 10px;
   }
 
   .viewer-container {
-    width: 100vw; /* Add this line */
+    width: 100vw; 
     height: calc(100vh - 70px);
   }
 }
